@@ -46,10 +46,10 @@ public class User extends Auditable
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnoreProperties(value = "user", allowSetters = true)
-    private List<Todo> todo = new ArrayList<>();
+    private List<Todos> todos = new ArrayList<>();
 
-    public List<Todo> getTodo() {
-        return todo;
+    public List<Todos> getTodo() {
+        return todos;
     }
 
     /**
@@ -78,8 +78,8 @@ public class User extends Auditable
         this.primaryemail = primaryemail;
     }
 
-    public void setTodo(List<Todo> todos) {
-        this.todo = todos;
+    public void setTodo(List<Todos> todos) {
+        this.todos = todos;
     }
 
 
