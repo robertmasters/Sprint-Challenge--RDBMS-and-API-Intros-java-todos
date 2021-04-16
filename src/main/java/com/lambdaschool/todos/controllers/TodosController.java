@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * The entry point for client to access user, todos combinations
  */
 @RestController
-@RequestMapping("/todo")
+@RequestMapping("/todos")
 public class TodosController
 {
     /**
@@ -29,7 +29,7 @@ public class TodosController
      * @param todoid The todo to be marked complete
      * @return Status of OK
      */
-    @PatchMapping(value = "/todo/{todoid}")
+    @PatchMapping(value = "/todos/{todoid}")
     public ResponseEntity<?> completeTodo(
         @PathVariable
             long todoid)

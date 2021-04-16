@@ -44,11 +44,12 @@ public class User extends Auditable
     @Email
     private String primaryemail;
 
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonIgnoreProperties(value = "user", allowSetters = true)
+    @JsonIgnoreProperties(value = "users", allowSetters = true)
     private List<Todos> todos = new ArrayList<>();
 
-    public List<Todos> getTodo() {
+    public List<Todos> getTodos() {
         return todos;
     }
 

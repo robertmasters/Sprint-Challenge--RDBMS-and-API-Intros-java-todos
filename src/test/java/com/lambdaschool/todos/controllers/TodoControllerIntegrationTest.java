@@ -61,19 +61,19 @@ public class TodoControllerIntegrationTest
         User newUser = new User("testUser",
             "testpassword",
             "test@email.com");
-        newUser.getTodo()
+        newUser.getTodos()
             .add(new Todos(newUser,
                 "testTodo"));
         newUser = userService.save(newUser);
 
         mockMvc.perform(MockMvcRequestBuilders.patch("/todos/todo/{todoid}",
-            newUser.getTodo()
+            newUser.getTodos()
                 .get(0)
                 .getTodoid()))
             .andExpect(status().isOk());
 
         newUser = userService.findUserById(newUser.getUserid());
-        assertTrue(newUser.getTodo()
+        assertTrue(newUser.getTodos()
             .get(0)
             .isCompleted());
     }
