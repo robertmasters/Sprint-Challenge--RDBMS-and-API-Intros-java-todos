@@ -29,7 +29,7 @@ public class TodosController
      * @param todoid The todo to be marked complete
      * @return Status of OK
      */
-    @PatchMapping(value = "/todo{todoid}")
+    @PatchMapping(value = "/todo/{todoid}")
     public ResponseEntity<?> completeTodo(
         @PathVariable
             long todoid)
