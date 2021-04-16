@@ -12,7 +12,7 @@ _You have **three hours** to complete this challenge. Plan your time accordingly
 
 ## Introduction
 
-This is a basic todo database scheme with users and a todo list. Users have a one to many relationship with todos. One user can have many todo items while a todo item only matches to one user. CRUD operations are available to display and manipulate this data.
+This is a basic todos database scheme with users and a todos list. Users have a one to many relationship with todos. One user can have many todos items while a todos item only matches to one user. CRUD operations are available to display and manipulate this data.
 
 ### Commits
 
@@ -34,7 +34,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 - [ ] Create a forked copy of this project
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Start with the provided todo application
+- [ ] Start with the provided todos application
 - [ ] Push commits: `git push -u origin <firstName-lastName>`
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 
@@ -93,8 +93,8 @@ The following end points are already available in the initial application. You a
   ```
   Ensure the new User contains all of the data supplied in the RequestBody.
 
-- [ ] PATCH /todos/todo/{todoid} - mark a todo as completed.
-  - Note that this method always sets the `completed` field to true. You should not allow users to set a todo's `completed` to false.
+- [ ] PATCH /todos/todos/{todoid} - mark a todos as completed.
+  - Note that this method always sets the `completed` field to true. You should not allow users to set a todos's `completed` to false.
 
 - [ ] DELETE /users/user/{userid} - Deletes a user based off of their userid and deletes all their associated todos.
 
@@ -289,7 +289,7 @@ http://localhost:2019/users/user/12
 </details>
 
 <details>
-<summary>PATCH http://localhost:2019/todos/todo/6</summary>
+<summary>PATCH http://localhost:2019/todos/todos/6</summary>
 
 OUTPUT
 
