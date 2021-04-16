@@ -1,7 +1,7 @@
 package com.lambdaschool.todos.controllers;
 
 import com.lambdaschool.todos.TodosApplicationTests;
-import com.lambdaschool.todos.models.Todos;
+import com.lambdaschool.todos.models.Todo;
 import com.lambdaschool.todos.models.User;
 import com.lambdaschool.todos.services.TodosService;
 import com.lambdaschool.todos.services.UserService;
@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
     classes = TodosApplicationTests.class)
 @AutoConfigureMockMvc
-public class TodosControllerIntegrationTest
+public class TodoControllerIntegrationTest
 {
     @Autowired
     private WebApplicationContext webApplicationContext;
@@ -62,7 +62,7 @@ public class TodosControllerIntegrationTest
             "testpassword",
             "test@email.com");
         newUser.getTodos()
-            .add(new Todos(newUser,
+            .add(new Todo(newUser,
                 "testTodo"));
         newUser = userService.save(newUser);
 

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TodosController
 {
     /**
-     * Using the Todos service to process user, todos combinations data
+     * Using the Todo service to process user, todos combinations data
      */
     @Autowired
     TodosService todosService;
