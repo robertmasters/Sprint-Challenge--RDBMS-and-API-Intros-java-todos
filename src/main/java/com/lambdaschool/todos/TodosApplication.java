@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 /**
  * Main class to start the application.
  */
+
 @EnableJpaAuditing
 @SpringBootApplication
 public class TodosApplication
