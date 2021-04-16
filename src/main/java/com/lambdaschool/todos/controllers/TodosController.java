@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * The entry point for client to access user, todos combinations
  */
 @RestController
-@RequestMapping("/todos")
+@RequestMapping("/todo")
 public class TodosController
 {
     /**

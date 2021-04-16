@@ -40,10 +40,10 @@ public class SeedData implements CommandLineRunner
         User u1 = new User("admin",
             "password",
             "admin@lambdaschool.local");
-        u1.getTodos()
+        u1.getTodo()
             .add(new Todo(u1,
                 "Give Joe access rights"));
-        u1.getTodos()
+        u1.getTodo()
             .add(new Todo(u1,
                 "Change the color of the home page"));
 
@@ -52,13 +52,13 @@ public class SeedData implements CommandLineRunner
         User u2 = new User("cinnamon",
             "1234567",
             "cinnamon@lambdaschool.local");
-        u2.getTodos()
+        u2.getTodo()
             .add(new Todo(u2,
                 "Take a nap"));
-        u2.getTodos()
+        u2.getTodo()
             .add(new Todo(u2,
                 "Rearrange my hutch"));
-        u2.getTodos()
+        u2.getTodo()
             .add(new Todo(u2,
                 "Groom my fur"));
         userService.save(u2);
@@ -67,7 +67,7 @@ public class SeedData implements CommandLineRunner
         User u3 = new User("barnbarn",
             "ILuvM4th!",
             "barnbarn@lambdaschool.local");
-        u3.getTodos()
+        u3.getTodo()
             .add(new Todo(u3,
                 "Rearrange my hutch"));
         userService.save(u3);
