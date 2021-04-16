@@ -20,7 +20,7 @@ public class TodosController
      * Using the Todos service to process user, todos combinations data
      */
     @Autowired
-    private TodosService todosService;
+    TodosService todosService;
 
     /**
      * Given the todo id, mark the task as complete
@@ -29,7 +29,7 @@ public class TodosController
      * @param todoid The todo to be marked complete
      * @return Status of OK
      */
-    @PatchMapping(value = "/todos/{todoid}")
+    @PatchMapping(value = "/todo{todoid}")
     public ResponseEntity<?> completeTodo(
         @PathVariable
             long todoid)
